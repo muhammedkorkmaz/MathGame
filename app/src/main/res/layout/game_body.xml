@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/body_bg"
+    android:elevation="15dp"
+    android:orientation="vertical"
+    tools:context="com.softonetech.mathgame.MainActivity">
+
+    <include
+        android:id="@+id/body_operations"
+        layout="@layout/game_body_operations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <include
+        android:id="@+id/body_choices"
+        layout="@layout/game_body_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

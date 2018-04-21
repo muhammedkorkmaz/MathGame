@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_fragment_bg">
+
+        <ImageView
+            android:id="@+id/img_main_fragment_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/bg_footer" />
+
+
+        <Button
+            android:id="@+id/btn_fragment_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/img_main_fragment_top"
+            android:background="@drawable/btn_orange"
+            android:fontFamily="@font/idroid"
+            android:text="PLUS ( + )"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_fragment_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/btn_fragment_plus"
+            android:background="@drawable/btn_orange"
+            android:fontFamily="@font/idroid"
+            android:text="MINUS ( - )"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_fragment_multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/btn_fragment_minus"
+            android:background="@drawable/btn_orange"
+            android:fontFamily="@font/idroid"
+            android:text="MULTIPLICATION ( x )"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_fragment_division"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/btn_fragment_multiplication"
+            android:background="@drawable/btn_orange"
+            android:fontFamily="@font/idroid"
+            android:text="DIVISION ( / )"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@id/btn_fragment_division"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_best_scores"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_orange"
+                android:fontFamily="@font/idroid"
+                android:text="SCORES"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_orange"
+                android:fontFamily="@font/idroid"
+                android:text="SHARE"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_main_fragment_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_footer" />
+
+    </RelativeLayout>
+
+</LinearLayout>

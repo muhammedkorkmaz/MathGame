@@ -2,13 +2,7 @@ package com.softonetech.mathgame;
 
 public class Levels {
 
-    private int Level;
+    public static int Level = 1;
+    public static String Operator = "";
 
-    public int getLevel() {
-        return Level;
-    }
-
-    public void setLevel(int level) {
-        Level = level;
-    }
 }

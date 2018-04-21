@@ -34,7 +34,7 @@ public class CustomRandom {
 
     Random Generator = new Random();
 
-    public int Generate() {
+    public int generate() {
 
         int randomNumber = Generator.nextInt((getMaxValue() - getMinValue()) + 1) + getMinValue();
 
